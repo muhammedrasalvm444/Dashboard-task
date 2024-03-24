@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --bgColor: " #FAFAFB";
+  --bgSoft: "#FFFFFF";
+  --seconderyColor: "#605BFF";
+  --textColor: "#9A9AA9";
+  --headingColor: "#000000";
+}
+body {
+  background-color: var(--bgSoft);
+  color: var(--textColor);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+}

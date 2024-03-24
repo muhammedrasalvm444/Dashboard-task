@@ -1,0 +1,203 @@
+.uploadPage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh; /* Set height to full viewport height */
+}
+.inputStyle {
+  background-color: #605bff;
+  padding: 14px 144px; /* Set padding top and bottom to 5px, left and right to 20px */
+  border: none; /* Remove default border */
+  color: white; /* Set text color to white */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Add some border radius for a nicer look */
+}
+.tableheader {
+  font-size: 14px;
+  font-weight: 600;
+}
+.tableheader::first-letter {
+  text-transform: uppercase;
+}
+.uploadFileSection {
+  background-color: white;
+  padding: 1.25rem; /* 20px converted to rem */
+  width: 90vw; /* 596px converted to rem */
+  height: 22.9375; /* 367px converted to rem */
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.uploadImageSection {
+  background-color: white;
+  width: 80vw;
+  height: 367px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  border: 1px dotted gray;
+}
+.uploadImageSection p {
+  font-size: 16px;
+  color: gray;
+}
+.uploadImageSection p span {
+  font-size: 16px;
+  color: #605bff;
+}
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+.custom-file-input {
+  display: none; /* Hide the default file input */
+}
+
+.uploadButton {
+  background-color: #605bff;
+  padding: 14px 10vw; /* Set padding top and bottom to 14px, left and right to 144px */
+  border: none; /* Remove default border */
+  color: white; /* Set text color to white */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Add some border radius for a nicer look */
+}
+
+.ptag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 9px 12px;
+  background-color: #605bff;
+  margin: 3px;
+  font-size: 12px;
+  color: white;
+  border-radius: 5px;
+}
+.uploadFileSection {
+  margin-bottom: 20px; /* Add margin between file upload section and table */
+}
+
+.bodytrtag {
+  background-color: white;
+}
+.custom-file-input {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the file name display */
+.custom-file-input::file-selector-button::before {
+  content: "Choose a file"; /* Change the default name */
+  margin-right: 10px; /* Add space between button and file name */
+}
+
+.bodytrtag {
+  background-color: white;
+}
+
+/* Make table header text wrap if necessary */
+.tableheader {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Make table cell text wrap if necessary */
+.tabledata td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 768px) {
+  .tabledata th,
+  .tabledata td {
+    padding: 8px; /* Adjust padding for smaller screens */
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+@media screen and (min-width: 991px) {
+  .uploadImageSection {
+    background-color: white;
+    width: 50vw;
+    height: 367px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px dotted gray;
+  }
+  .uploadButton {
+    background-color: #605bff;
+    padding: 14px 16vw; /* Set padding top and bottom to 14px, left and right to 144px */
+    border: none; /* Remove default border */
+    color: white; /* Set text color to white */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Add some border radius for a nicer look */
+  }
+}
+.title {
+  display: none;
+  text-align: start;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    display: block;
+    text-align: start;
+    font-size: 24px;
+  }
+}
+.tableContainer {
+  overflow-x: auto; /* Add horizontal scroll if needed */
+  width: 100%;
+}
+
+/* Add background to the table */
+.tabledata {
+  table-layout: auto;
+  overflow-x: auto; /* Add horizontal scroll if needed */
+  background-color: #f2f2f2;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  width: 100%;
+}
+
+/* Style for table headers */
+.tabledata th {
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Style for table cells */
+.tabledata td {
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 768px) {
+  .tabledata th,
+  .tabledata td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}

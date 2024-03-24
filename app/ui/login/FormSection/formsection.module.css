@@ -1,0 +1,119 @@
+.formsection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.iconsection {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+.icongoogle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 25px;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 12px;
+  color: #858585;
+}
+.loginformsection {
+  width: 353px;
+  display: flex;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 7px;
+}
+.loginform {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 20px; /* Added padding for spacing */
+}
+
+.loginform label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.loginform input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 120px;
+  border-radius: 10px;
+
+  border: none;
+  background-color: #eaeaea;
+}
+
+.loginform span {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #346bd4;
+  font-size: 16px;
+  font-weight: 400;
+
+  /* Added margin for spacing between forgot password and submit button */
+}
+
+.loginform button {
+  padding: 10px; /* Added padding for submit button */
+  background-color: #007bff; /* Added background color for button */
+  color: #fff; /* Added text color for button */
+  border: none; /* Removed default button border */
+  cursor: pointer; /* Added cursor style for button */
+  transition: background-color 0.3s; /* Added transition effect */
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.loginform button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+.registerLink {
+  display: flex;
+  margin-top: 10px;
+  align-items: start;
+  text-align: start !important;
+  color: #858585;
+  font-size: 16px;
+  font-weight: 400;
+}
+.registerLink span {
+  display: flex;
+  align-items: start;
+  text-align: start !important;
+  color: #0056b3;
+  font-size: 16px;
+  font-weight: 400;
+}
+.iconslist {
+  display: none; /* Hide by default */
+}
+
+@media only screen and (max-width: 768px) {
+  .iconslist {
+    gap: 10;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    left: 205px;
+    margin-top: 20px;
+    border-radius: "50%";
+  }
+}
+
+.ImageStyle {
+  border-radius: "50px";
+  background-color: white;
+  color: #181616;
+}

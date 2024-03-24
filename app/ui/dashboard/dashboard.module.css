@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+}
+.menu {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  transition: width 0.5s ease-in-out; /* Adding transition for width */
+  transform: translateX(0); /* Initially visible */
+}
+.content {
+  flex: 4;
+  background-color: #fafafb;
+  /* padding: 20px; */
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    transform: translateX(-100%); /* Off-screen to the left */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%; /* Adjust as needed */
+    z-index: 999;
+  }
+}

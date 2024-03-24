@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+  padding: 20px;
+  color: #9a9aa9;
+  margin: 2;
+  font-size: 16px;
+  font-weight: 600;
+}
+.container:hover,
+.active {
+  /* background-color: #605bff; */
+  border-radius: 10px;
+  color: #605bff;
+}

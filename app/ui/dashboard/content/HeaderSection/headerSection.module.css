@@ -1,0 +1,14 @@
+.HeaderSection {
+  margin: 3vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right {
+  display: flex;
+  gap: 10px;
+}
+.HeaderSection h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
