@@ -1,10 +1,9 @@
 import Homepage from "./ui/HomePage";
 
-const Home = () => {
+export default function Page() {
   return (
     <div>
       <Homepage />
     </div>
   );
-};
-export default Home;
+}
