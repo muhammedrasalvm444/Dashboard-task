@@ -138,6 +138,11 @@ const FormSection = () => {
           />
         </Link>
       </div>
+      <div style={{ margin: "30px" }}>
+        <h5>Credentails</h5>
+        <p>john@mail.com</p>
+        <p>changeme</p>
+      </div>
     </div>
   );
 };
