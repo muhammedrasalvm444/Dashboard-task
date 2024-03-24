@@ -78,6 +78,7 @@ const UploadPage = () => {
                       fontSize: "16px",
                       color: "red",
                       marginTop: "10px",
+                      cursor: "pointer",
                     }}
                     onClick={() => setSelectedFile(null)}
                   >
